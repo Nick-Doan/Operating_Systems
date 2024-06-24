@@ -1,2 +1,2 @@
 SELECT *
-FROM operating.online_data
+FROM os_systems.online_data
