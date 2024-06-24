@@ -23,7 +23,7 @@ CREATE TABLE online_data (
     Nintendo numeric(4,2),
     Other numeric(4,2),
     Primary key(_record_number)
-    
+;
 -- -------------------------    
 -- Insert records 1 - 185
 -- -------------------------
