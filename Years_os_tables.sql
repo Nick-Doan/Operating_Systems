@@ -66,7 +66,7 @@ INSERT INTO online_data_2009 (
 ('2009-11', 92.87, 0.04, 0.38, 4.9, 0.24, 0.71, 0, 0.44, 0.02, 0.12, 0, 0, 0.16, 0.08, 0, 0, 0, 0, 0, 0.02, 0.02),
 ('2009-12', 93, 0.05, 0.41, 4.66, 0.3, 0.68, 0, 0.45, 0.02, 0.12, 0, 0, 0.17, 0.09, 0, 0, 0, 0, 0, 0.02, 0.02);
 
--- Repeat for subsequent years (2010-2024)
+
 -- Table for 2010
 CREATE TABLE online_data_2010 (
 	_record_number int AUTO_INCREMENT NOT NULL,
