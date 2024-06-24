@@ -1,57 +1,35 @@
-CREATE TABLE online_data (
-	_record_number int AUTO_INCREMENT NOT NULL,
-    Date varchar(7),
-    Windows numeric(5,2),
-    Android numeric(5,2),
-    iOS numeric(5,2),
-    'OS X' numeric(4,2),
-    Unknown numeric(4,2),
-    Linux numeric(4,2),
-    'Series 40' numeric(4,2),
-    SymbianOS numeric(4,2),
-    Samsung numeric(4,2),
-    'BlackBerry OS' numeric(4,2),
-    'Chrome OS'numeric(4,2),
-    'Nokia Unknown' numeric(4,2),
-    Playstation numeric(4,2),
-    'Sony Ericsson' numeric(4,2),
-    KaiOS numeric(4,2),
-    Xbox numeric(4,2),
-    bada numeric(4,2),
-    Tizen numeric(4,2),
-    LG numeric(4,2),
-    Nintendo numeric(4,2),
-    Other numeric(4,2),
-    PRIMARY KEY (_record_number)
+CREATE DATABASE IF NOT EXISTS OperatingSystemsUsageDB;
+USE OperatingSystemsUsageDB;
+
+CREATE TABLE operating_systems_usage (
+    Date DATE,
+    Windows DECIMAL(5, 2),
+    Android DECIMAL(5, 2),
+    iOS DECIMAL(5, 2),
+    `OS X` DECIMAL(5, 2),
+    `Unknown` DECIMAL(5, 2),
+    Linux DECIMAL(5, 2),
+    `Series 40` DECIMAL(5, 2),
+    SymbianOS DECIMAL(5, 2),
+    Samsung DECIMAL(5, 2),
+    `BlackBerry OS` DECIMAL(5, 2),
+    `Chrome OS` DECIMAL(5, 2),
+    `Nokia Unknown` DECIMAL(5, 2),
+    Playstation DECIMAL(5, 2),
+    `Sony Ericsson` DECIMAL(5, 2),
+    KaiOS DECIMAL(5, 2),
+    Xbox DECIMAL(5, 2),
+    bada DECIMAL(5, 2),
+    Tizen DECIMAL(5, 2),
+    LG DECIMAL(5, 2),
+    Nintendo DECIMAL(5, 2),
+    `Other` DECIMAL(5, 2)
 );
--- -------------------------    
--- Insert records 1 - 185
--- -------------------------
-INSERT INTO online_data (
-    Date,
-    Windows,
-    Android,
-    iOS,
-    `OS X`,
-    Unknown,
-    Linux,
-    `Series 40`,
-    SymbianOS,
-    Samsung,
-    `BlackBerry OS`,
-    `Chrome OS`,
-    `Nokia Unknown`,
-    Playstation,
-    `Sony Ericsson`,
-    KaiOS,
-    Xbox,
-    bada,
-    Tizen,
-    LG,
-    Nintendo,
-    Other
-) VALUES
-('2009-01', 94.8, 0, 0.24, 3.66, 0.27, 0.64, 0, 0.26, 0, 0.01, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0.01, 0.01),
+INSERT INTO operating_systems_usage (
+    Date, Windows, Android, iOS, `OS X`, `Unknown`, Linux, `Series 40`, SymbianOS, Samsung, 
+    `BlackBerry OS`, `CInvoiceNohrome OS`, `Nokia Unknown`, Playstation, `Sony Ericsson`, KaiOS, 
+    Xbox, bada, Tizen, LG, Nintendo, `Other`
+) VALUES ('2009-01', 94.8, 0, 0.24, 3.66, 0.27, 0.64, 0, 0.26, 0, 0.01, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0.01, 0.01),
 ('2009-02', 94.74, 0.01, 0.25, 3.73, 0.22, 0.61, 0, 0.26, 0, 0.04, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0.01, 0.02),
 ('2009-03', 94.48, 0.02, 0.32, 3.84, 0.25, 0.64, 0, 0.28, 0, 0.05, 0, 0, 0.11, 0, 0, 0, 0, 0, 0, 0.01, 0.01),
 ('2009-04', 94.32, 0.02, 0.36, 3.89, 0.26, 0.66, 0, 0.3, 0, 0.06, 0, 0, 0.12, 0, 0, 0, 0, 0, 0, 0.01, 0.01),
@@ -236,6 +214,3 @@ INSERT INTO online_data (
 ('2024-03', 27.39, 43.5, 18.22, 5.55, 2.57, 1.54, 0, 0, 0.23, 0, 0.86, 0.01, 0.01, 0, 0.08, 0.02, 0, 0, 0, 0, 0),
 ('2024-04', 28.24, 43.35, 17.77, 5.65, 2.16, 1.5, 0, 0, 0.23, 0, 0.98, 0.01, 0.01, 0, 0.07, 0.02, 0, 0, 0, 0, 0),
 ('2024-05', 27.97, 43.86, 17.8, 5.64, 1.96, 1.44, 0, 0, 0.23, 0, 0.96, 0, 0.01, 0, 0.09, 0.03, 0, 0, 0, 0, 0);
-
-
-
